@@ -77,6 +77,14 @@ pip3 install .
             sv:  Integer indicating which singular value to sort by
 
 
+<b>plot_svd(svd)</b>
+    Tool for plotting U and V^T
+
+    Parameters:
+            svd: A 3-ple containing the result of a SVD computed by 'pd_svd'
+            sv: Integer indicating which singular value to sort by
+            
+            
 <b>plot_svs(svd, top=5)</b>
     Tool for plotting U and V^T sorted by top singular values
 
@@ -107,7 +115,7 @@ pip3 install .
             noise:  A list enumerating the singular values to set to 0
 
     Returns:
-            Numpy array reconstruction of the filtered dataset
+            Reconstruction of the filtered dataset as a NumPy array
 </pre>
 
 Example:

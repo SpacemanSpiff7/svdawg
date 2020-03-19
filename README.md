@@ -175,3 +175,10 @@ sv.plot_svs(svd, top=4)
 ```
 
 ![Plotted Singular Values](https://github.com/SpacemanSpiff7/images/blob/master/plot_svs_example.png)
+
+```python
+# Or just plot whichever one you choose
+sv.plot_sv(svd, sv=0)
+```
+
+![Sorted by 0th SV](https://github.com/SpacemanSpiff7/images/blob/master/single_sv.png)

@@ -169,3 +169,9 @@ sv.plot_mat(sv.svdfilter(svd))
 
 ![Filtered 1st SV](https://github.com/SpacemanSpiff7/images/blob/master/svdfilter_example.png)
 
+```python
+# Plot SVD sorted by top singular values
+sv.plot_svs(svd, top=4)
+```
+
+![Plotted Singular Values](https://github.com/SpacemanSpiff7/images/blob/master/plot_svs_example.png)

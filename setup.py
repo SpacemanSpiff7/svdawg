@@ -3,7 +3,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 setuptools.setup(
      name='svdawg',
-     version='0.3',
+     version='0.4',
      author="Simone Longo",
      author_email="s.longo@utah.edu",
      description="SVD accessories, widgets, and graphics",

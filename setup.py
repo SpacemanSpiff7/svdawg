@@ -4,7 +4,6 @@ with open("README.md", "r") as fh:
 setuptools.setup(
      name='svdawg',
      version='0.1',
-     scripts=['svdawg.py'] ,
      author="Simone Longo",
      author_email="s.longo@utah.edu",
      description="SVD accessories, widgets, and graphics",
@@ -14,14 +13,9 @@ setuptools.setup(
           'seaborn',
           'matplotlib',
           'sklearn'
-      ]
-     long_description=long_description,
-   long_description_content_type="text/markdown",
+      ],
      url="https://github.com/SpacemanSpiff7/svdawg",
-     packages=setuptools.find_packages(),
-     classifiers=[
-         "Programming Language :: Python :: 3",
-         "License :: OSI Approved :: MIT License",
-         "Operating System :: OS Independent",
-     ],
+     packages=['svdawg'],
+     license='MIT',
+     zip_safe=False
  )

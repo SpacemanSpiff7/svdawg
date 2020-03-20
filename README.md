@@ -5,6 +5,13 @@
 Accessories, widgets, and graphics for singular value decomposition (SVD) analysis.
 
 ### Installation
+
+```bash
+pip3 install svdawg
+```
+
+#### OR
+
 Installation requires `numpy`, `seaborn`, `matplotlib`, `pandas`, and `sklearn`
 
 In your terminal:

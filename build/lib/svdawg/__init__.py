@@ -1,1 +1,1 @@
-from svdawg import *
+from svdawg.svdawg import *

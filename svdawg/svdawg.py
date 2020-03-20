@@ -177,6 +177,7 @@ def plot_svs(svd, top=5):
         ax[0,i].set_title('Sorted by U column %d'%i)
         _plot_mat_ax(svd[2].sort_values(by=svd[2].index[i], axis = 1), ax[1,i])
         ax[1,i].set_title('Sorted by V transpose row %d'%i)
+    plt.show()
 
 def plot_svd(svd):
     """
@@ -274,6 +275,7 @@ def lineplot_svs(svd, top=5):
         for i, sv in enumerate(topvt):
             _plotlines(sv, ax[1][i])
     fig.tight_layout(pad=1.0)
+    plt.show()
 
 def svd_overview(data, top=3, scale=True): #, sort=False):
     """
@@ -324,6 +326,7 @@ def svd_overview(data, top=3, scale=True): #, sort=False):
     for i, vals in enumerate(topvt):
         _plotlines(vals, vtaxs[i], orient='wide')
     fig.tight_layout(pad=1)
+    plt.show()
 
 
 if __name__=="__main__":

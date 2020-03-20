@@ -4,6 +4,8 @@
 
 Accessories, widgets, and graphics for singular value decomposition (SVD) analysis.
 
+#### NOTE: This is an initial release and may be unstable. Please contact with bug information or feature requests. More functionality will be added over time.
+
 ### Installation
 
 ```bash

@@ -107,6 +107,15 @@ pip3 install .
                 Tuple Contents: (Pandas.DataFrame, (U, S, V^T))
 
 
+<b>svd_overview(data, top=3, scale=True)</b>
+    Display original data with line plots of top singular values from V^T and U
+
+    Parameters:
+            data:   untransformed dataframe
+            top:    top n singular values to plot
+            scale:  Preprocess data before SVD (boolean)
+
+
 <b>svdfilter(svd, noise=[0])</b>
     Tool for filtering a singular value and reconstructing a data set
 
@@ -182,3 +191,11 @@ sv.plot_sv(svd, sv=0)
 ```
 
 ![Sorted by 0th SV](https://github.com/SpacemanSpiff7/images/blob/master/single_sv.png)
+
+
+```python
+# Quickly visualize Singular values in the context of your original data
+sv.svd_overview(toydata, top=3)
+```
+
+![SVD Overview](https://github.com/SpacemanSpiff7/images/blob/master/Screen%20Shot%202020-03-20%20at%208.05.44%20AM.png)

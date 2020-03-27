@@ -158,9 +158,7 @@ def fillnans(df, fill=0):
     Returns:
             Returns a copy of the input Pandas DataFrame replacing all np.nan and np.inf with the specified value
     """
-    rdf = df.replace([np.inf, -np.inf], np.nan)
-    rdf = df.fillna(fill)
-    return rdf
+    return df.replace([np.inf, -np.inf, "NaN", None, "None", np.nan], fill)
 
 def plot_svs(svd, top=5):
     """
